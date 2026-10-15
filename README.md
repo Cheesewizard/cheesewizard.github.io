@@ -20,3 +20,7 @@ Push changes to `main`; GitHub Pages republishes automatically. GitHub's reposit
 ## Local preview
 
 Serve this folder using any static HTTP server and open its local address. All site links and assets are relative, so no application framework or package installation is needed. Mobile navigation remains available without JavaScript.
+
+## Design
+
+The layout adapts Brittany Chiang’s v4 portfolio design, with visible attribution and its MIT notice retained. See `DESIGN-CREDITS.md` and `licenses/brittany-chiang-v4-MIT.txt`. This is a static adaptation; Gatsby is not required.
