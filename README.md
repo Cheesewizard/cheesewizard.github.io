@@ -1,15 +1,22 @@
 # Philip Igo portfolio
 
-This is a static, dependency-free portfolio site. Every page uses relative URLs so the folder can be published directly with GitHub Pages.
+Live website: https://cheesewizard.github.io/
 
-## Maintain
+A static, dependency-free site hosted on GitHub Pages from the `main` branch and repository root. There is no build step, analytics service, contact-form service, or paid hosting requirement.
 
-Replace or add image and video files in `assets/` using the filenames referenced by `index.html` and `rocksmith-audio-bridge.html`. Edit copy directly in the HTML and keep project claims grounded in the source material. The mobile navigation is progressively enhanced by `script.js`; the links remain usable if JavaScript is unavailable.
+## Update content
 
-## Publish with GitHub Pages
+- `index.html`: homepage, career summary and current projects.
+- `zombie-army-vr.html`, `starship-troopers-continuum.html`, `zombieland-reloaded.html`: commercial contributions.
+- `rocksmith-audio-bridge.html`: independent project and video demonstration.
+- `styles.css`: colours, typography, spacing and responsive layout.
+- `assets/`: screenshots, video and downloadable CV.
+- `sitemap.xml`: add a URL when adding a new public page.
 
-1. Copy the contents of this folder to the repository root (or publish this folder as the selected Pages source).
-2. In the repository settings, open **Pages**, select the deployment branch and root folder, then save.
-3. Confirm that the selected branch contains `.nojekyll` and the `assets/` directory.
+Edit text directly in the HTML. Project names are ordinary text and can be changed without renaming asset files. Replace screenshots and the CV with files of the same name to update them. Keep development status accurate and distinguish personal contributions from team work. Image sources are recorded in `ASSET-CREDITS.md`.
 
-The site has no build step, analytics, forms or third-party runtime dependencies.
+Push changes to `main`; GitHub Pages republishes automatically. GitHub's repository editor also supports small text edits without local setup.
+
+## Local preview
+
+Serve this folder using any static HTTP server and open its local address. All site links and assets are relative, so no application framework or package installation is needed. Mobile navigation remains available without JavaScript.
