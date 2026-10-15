@@ -23,4 +23,4 @@ Serve this folder using any static HTTP server and open its local address. All s
 
 ## Design
 
-The layout adapts Brittany Chiang’s v4 portfolio design, with visible attribution and its MIT notice retained. See `DESIGN-CREDITS.md` and `licenses/brittany-chiang-v4-MIT.txt`. This is a static adaptation; Gatsby is not required.
+The layout adapts Brittany Chiang’s v4 portfolio design, with source attribution and its MIT notice retained. See `DESIGN-CREDITS.md` and `licenses/brittany-chiang-v4-MIT.txt`. This is a static adaptation; Gatsby is not required.
