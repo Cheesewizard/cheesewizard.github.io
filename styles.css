@@ -25,3 +25,7 @@
 .project-bridge .project-copy p:not(.kicker){padding:0;background:transparent}
 .project-copy p.project-platforms{background:none;padding:0;margin:0 0 1.1rem;font-family:var(--mono);font-size:.75rem;line-height:1.7;color:var(--muted)}
 .case-meta b{line-height:1.7}
+.contribution-figure{margin:2rem 0 0;max-width:100%}
+.contribution-figure a{display:block}
+.contribution-figure img{width:100%;height:auto;object-fit:contain;border-radius:3px}
+.contribution-figure figcaption{margin-top:.75rem;font-size:.85rem;line-height:1.6;color:var(--muted)}
