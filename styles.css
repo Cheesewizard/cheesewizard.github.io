@@ -38,3 +38,11 @@
 .package-note a{color:var(--paper);text-decoration:underline;text-underline-offset:4px}
 .case-study .case-hero h1{font-size:clamp(3rem,8vw,8rem);letter-spacing:-.065em;overflow-wrap:anywhere}
 @media(max-width:760px){.package-note{grid-template-columns:1fr;gap:1.5rem}.case-study .case-hero h1{font-size:clamp(2.8rem,12vw,6rem)}}
+.expertise{padding-bottom:6rem}
+.expertise>h2{border-top:1px solid var(--line);padding-top:1.25rem;font-weight:500}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3rem}
+.expertise-grid article>span{font-size:.75rem;color:var(--acid);text-transform:uppercase;letter-spacing:.1em}
+.expertise-grid h3{font-size:1.5rem;line-height:1.2;letter-spacing:-.03em;margin:1rem 0}
+.expertise-grid p{color:var(--muted);font-size:1rem;line-height:1.7}
+@media(max-width:760px){.expertise-grid{grid-template-columns:1fr;gap:2rem}}
+.platform-line{border-top:1px solid var(--line);margin:2rem 0 0;padding-top:1.5rem;color:var(--muted);font-size:.9rem;line-height:1.7}
