@@ -41,3 +41,5 @@
 .case-page .case-nav,.case-kicker,.case-meta,.case-media figcaption,.case-figure figcaption{font-size:.875rem}.case-media img{height:auto;max-height:none;object-fit:contain}.case-page .case-nav{flex-wrap:wrap;justify-content:flex-end}.case-cv{white-space:nowrap}.case-page .case-header-inner{gap:1rem}.case-hero h1,.case-next h2{overflow-wrap:anywhere}.case-section .accent{color:var(--amber)}.case-section h2{margin-bottom:1rem}@media(max-width:850px){.case-page .case-nav{font-size:.875rem}}@media(max-width:480px){.case-page .case-nav{max-width:230px}.case-page .case-cv{border-left:0;padding-left:0}.case-hero h1{font-size:clamp(2.6rem,11vw,4rem)}.case-media img{max-height:none}}
 
 .case-meta strong{font-weight:400}
+
+.case-notice{border-left:3px solid var(--amber);background:#292a26;color:var(--warm);padding:16px 20px;margin:28px 0;max-width:780px;font-size:1rem}.case-notice strong{color:var(--amber)}
