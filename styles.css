@@ -12,3 +12,5 @@ html{scroll-padding-top:24px}.hero-copy,.hero-art,.project-copy,.project-visual,
 .wordmark{white-space:nowrap;flex-shrink:0}.header-inner nav{min-width:0}@media(max-width:480px){.header-inner nav{gap:.35rem .8rem;max-width:210px;letter-spacing:.06em}}
 
 .bridge-media video{object-fit:contain}
+
+.link-icon{display:inline-block;width:1em;height:1em;vertical-align:-.1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.case-next .link-icon{width:.55em;height:.55em;vertical-align:.03em;margin-left:.15em}.contact-email .link-icon{width:.65em;height:.65em}.case-meta .link-icon{width:.85em;height:.85em}.text-link .link-icon{color:var(--amber)}
