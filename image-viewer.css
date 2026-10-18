@@ -77,7 +77,6 @@ body.image-viewer-open {
 	overscroll-behavior: none;
 }
 
-.stat-gallery-controls,
-.commercial-gallery-status {
+.screenshot-gallery-controls {
 	align-items: center;
 }

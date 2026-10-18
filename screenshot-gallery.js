@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	var gallery = document.querySelector('[data-stat-gallery]');
+	var gallery = document.querySelector('[data-screenshot-gallery]');
 	if (!gallery) return;
 
 	var items = Array.prototype.slice.call(gallery.querySelectorAll('[data-gallery-item]'));
@@ -56,10 +56,10 @@
 		});
 	});
 
-	gallery.querySelector('.stat-gallery-prev').addEventListener('click', function () {
+	gallery.querySelector('.screenshot-gallery-prev').addEventListener('click', function () {
 		show(index - 1, false);
 	});
-	gallery.querySelector('.stat-gallery-next').addEventListener('click', function () {
+	gallery.querySelector('.screenshot-gallery-next').addEventListener('click', function () {
 		show(index + 1, false);
 	});
 	gallery.addEventListener('keydown', function (event) {

@@ -1,0 +1,19 @@
+.screenshot-gallery-page .case-media a { display: block; }
+.screenshot-gallery-page .stat-feature img { background: #111419; }
+.stat-feature-copy { margin-top: 5rem; }
+.screenshot-gallery { margin: 7rem 0 5rem; border-top: 1px solid rgba(255,255,255,.14); padding-top: 3rem; }
+.screenshot-gallery-heading { display:flex; justify-content:space-between; gap:2rem; align-items:end; margin-bottom:2rem; }
+.screenshot-gallery-heading > p { max-width: 30rem; color: var(--muted, #a9aaa5); margin:0; }
+.screenshot-gallery-viewer { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:1rem; }
+.screenshot-gallery-stage { margin:0; min-width:0; }
+.screenshot-gallery-stage img { display:block; width:100%; height:auto; object-fit:contain; background:#101217; border:1px solid rgba(255,255,255,.14); }
+.screenshot-gallery-stage figcaption { margin-top: .8rem; color: var(--muted, #a9aaa5); }
+.screenshot-gallery-button { border:1px solid rgba(255,255,255,.25); background:#242521; color:#f3f2ec; width:2.75rem; height:2.75rem; border-radius:50%; cursor:pointer; font-size:1.2rem; display:grid; place-items:center; }
+.screenshot-gallery-button svg { width:1.1rem; height:1.1rem; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.screenshot-gallery-button:hover, .screenshot-gallery-button:focus-visible { border-color:#e0a13b; color:#e0a13b; }
+.screenshot-gallery-controls { display:flex; justify-content:space-between; gap:1rem; margin:1rem 0; color:var(--muted, #a9aaa5); font-size:.82rem; }
+.screenshot-gallery-thumbs { display:grid; grid-template-columns:repeat(8, minmax(0,1fr)); gap:.55rem; }
+.screenshot-gallery-thumbs button { padding:0; border:1px solid rgba(255,255,255,.16); background:#151619; cursor:pointer; aspect-ratio: 1.35; overflow:hidden; opacity:.62; }
+.screenshot-gallery-thumbs button:hover, .screenshot-gallery-thumbs button:focus-visible, .screenshot-gallery-thumbs button.is-active { opacity:1; border-color:#e0a13b; }
+.screenshot-gallery-thumbs img { display:block; width:100%; height:100%; object-fit:cover; }
+@media (max-width: 800px) { .screenshot-gallery-heading { display:block; } .screenshot-gallery-heading > p { margin-top:1rem; } .screenshot-gallery-viewer { gap:.45rem; } .screenshot-gallery-button { width:2.25rem; height:2.25rem; } .screenshot-gallery-thumbs { grid-template-columns:repeat(4, 1fr); } .screenshot-gallery-controls { display:block; } .screenshot-gallery-controls span { display:block; margin-top:.4rem; } }
