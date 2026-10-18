@@ -9,7 +9,8 @@ A static, dependency-free site hosted on GitHub Pages from the `main` branch and
 - `index.html`: homepage, career summary and current projects.
 - `zombie-army-vr.html`, `starship-troopers-continuum.html`, `zombieland-reloaded.html`: commercial contributions.
 - `rocksmith-audio-bridge.html`: independent project and video demonstration.
-- `styles.css`: colours, typography, spacing and responsive layout.
+- `styles.css`: homepage design and shared colours, typography and responsive layout.
+- `case-studies.css`: project detail layouts.
 - `assets/`: screenshots, video and downloadable CV.
 - `sitemap.xml`: add a URL when adding a new public page.
 
@@ -23,4 +24,4 @@ Serve this folder using any static HTTP server and open its local address. All s
 
 ## Design
 
-The layout adapts Brittany Chiang’s v4 portfolio design, with source attribution and its MIT notice retained. See `DESIGN-CREDITS.md` and `licenses/brittany-chiang-v4-MIT.txt`. This is a static adaptation; Gatsby is not required.
+The selected design uses charcoal, amber and condensed headings with factual project contributions. See `DESIGN-CREDITS.md` for design history. Project detail pages use the same design. Open Graph metadata prepares link previews for LinkedIn and other sharing services.

@@ -12,3 +12,5 @@ Game names, artwork and trademarks belong to their respective owners. This repos
 
 The Zombie Army VR gameplay image used in the redesign is an official Steam store screenshot: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_152dad1d11b8d32912056eb63f161269a7108525.1920x1080.jpg . The screenshot depicts the full game; Philip's individual contributions are described in the page text.
 Zombie Army VR hand-gesture and scoring screenshots were supplied by Philip Igo to illustrate his contributions. The screenshots depict the wider game; captions identify the relevant systems.
+
+WebP display copies are compressed from the corresponding credited originals. The original supplied screenshots remain available through full-size image links.

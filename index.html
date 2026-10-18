@@ -1,49 +1,145 @@
 <!doctype html>
-<!-- Design adapted from Brittany Chiang: https://brittanychiang.com/ | https://github.com/bchiang7/v4 | MIT notice: licenses/brittany-chiang-v4-MIT.txt -->
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Philip Igo | Unity &amp; C# programmer</title>
-  <meta name="description" content="Philip Igo is a Unity and C# programmer working on gameplay systems, platform integration and developer tools.">
-  <meta property="og:title" content="Philip Igo | Unity &amp; C# programmer">
-  <meta property="og:description" content="Gameplay systems, platform SDKs and developer tools. Shipped VR titles at XR Games and Rebellion.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cheesewizard.github.io/">
-  <meta property="og:image" content="https://cheesewizard.github.io/assets/zombie-army-gameplay.jpg">
-  <link rel="canonical" href="https://cheesewizard.github.io/"><link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Philip Igo, Unity and C# programmer building gameplay architecture, platform systems and shipped VR games.">
+	<title>Philip Igo | Unity &amp; C# Programmer</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=DM+Sans:wght@400&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+
+	<link rel="canonical" href="https://cheesewizard.github.io/">
+	<meta name="theme-color" content="#20211f">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Philip Igo | Unity &amp; C# Programmer">
+	<meta property="og:description" content="8+ years in software engineering. Gameplay architecture, reusable packages, platform SDKs, profiling and release support on shipped VR games.">
+	<meta property="og:url" content="https://cheesewizard.github.io/">
+	<meta property="og:image" content="https://cheesewizard.github.io/assets/zombie-army-gameplay.jpg">
+	<meta property="og:image:alt" content="Zombie Army VR gameplay. Philip Igo's contributions are detailed in the portfolio.">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header container">
-    <a class="wordmark" href="index.html" aria-label="Philip Igo home">PI<span>.</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="#work"><b>01.</b> Work</a><a href="#development"><b>02.</b> Current projects</a><a href="#about"><b>03.</b> Experience</a><a href="#contact"><b>04.</b> Contact</a><a class="outline-button" href="assets/philip-igo-cv.pdf">CV <span>↗</span></a>
-    </nav>
-  </header>
-  <main id="main">
-    <section class="hero container">
-      <p class="kicker">Hi, my name is</p><h1>Philip Igo.</h1><h2>Unity &amp; C# programmer.</h2>
-      <p class="intro">I work on gameplay systems, platform integration and developer tools. I have 8+ years of software engineering experience, including shipped VR games at XR Games and Rebellion. I’m now working freelance.</p>
-      <p class="location">Based in West Yorkshire, UK <span class="available"><i></i> Available for Unity programming roles</span></p>
-      <a class="outline-button hero-button" href="#work">View selected work <span>↓</span></a>
-    </section>
+	<a class="skip-link" href="#main">Skip to content</a>
+	<header class="site-header">
+		<div class="header-inner">
+			<a class="wordmark" href="index.html" aria-label="Philip Igo home">PHILIP <span>IGO</span></a>
+			<nav aria-label="Main navigation">
+				<a href="#work">Work</a>
+				<a href="#expertise">Expertise</a>
+				<a href="#contact">Contact</a>
+				<a class="cv-link" href="assets/philip-igo-cv.pdf">CV (PDF) <span aria-hidden="true">↗</span></a>
+			</nav>
+		</div>
+	</header>
 
-    <section id="work" class="section container"><div class="section-title"><span>01.</span><h2>Selected work</h2></div>
-      <p class="section-intro">Selected shipped work from XR Games and Rebellion, alongside an independent Rocksmith modding project.</p>
-      <article class="project project-featured"><a class="project-image" href="zombie-army-vr.html"><img src="assets/zombie-army-gameplay.jpg" alt="Zombie Army VR gameplay" loading="lazy"></a><div class="project-copy"><p class="kicker">Featured project · XR Games / Rebellion</p><h3><a href="zombie-army-vr.html">Zombie Army VR</a></h3><p class="project-platforms">Released on: Meta Quest · Oculus Rift · PC VR (Steam) · PSVR2 (PS5)</p><p>Gameplay and systems work across score progression, VR controls, multiplayer and platform services. I worked on the core score service, including multikill modifiers and extensible independent modules.</p><ul class="tag-list"><li>Unity</li><li>C#</li><li>VR</li><li>Platform SDKs</li></ul><a class="text-link" href="zombie-army-vr.html">Contribution details ↗</a></div></article>
-      <article class="project"><a class="project-image" href="starship-troopers-continuum.html"><img src="assets/starship-troopers.jpg" alt="Starship Troopers: Continuum" loading="lazy"></a><div class="project-copy"><p class="kicker">XR Games · shipped project</p><h3><a href="starship-troopers-continuum.html">Starship Troopers: Continuum</a></h3><p class="project-platforms">Released on: Meta Quest · PSVR2 (PS5)</p><p>Integrated and iterated reusable save and social packages, multiplayer features and backend setup, with loading optimisation, profiling and submission support.</p><ul class="tag-list"><li>Unity</li><li>Multiplayer</li><li>Profiling</li></ul><a class="text-link" href="starship-troopers-continuum.html">Contribution details ↗</a></div></article>
-      <article class="project project-reverse"><a class="project-image" href="zombieland-reloaded.html"><img src="assets/zombieland.jpg" alt="Zombieland: Headshot Fever Reloaded" loading="lazy"></a><div class="project-copy"><p class="kicker">XR Games · shipped project</p><h3><a href="zombieland-reloaded.html">Zombieland: Headshot Fever Reloaded</a></h3><p class="project-platforms">Released on: PSVR2 (PS5)</p><p>Worked on the PSVR2 port ahead of the hardware’s launch, liaising with Sony developer support to resolve platform-specific questions and help the XR Games team deliver a launch title. Also worked on backend setup and independently wrote its reusable save package.</p><ul class="tag-list"><li>PSVR2</li><li>Unity</li><li>Save systems</li></ul><a class="text-link" href="zombieland-reloaded.html">Contribution details ↗</a></div></article>
-      <article class="project project-bridge"><div class="project-media"><video controls preload="none" poster="assets/bridge-video-poster.jpg" aria-label="Rocksmith Audio Bridge demonstration"><source src="assets/bridge-demo.mp4" type="video/mp4"><a href="assets/bridge-demo.mp4">Watch the demo video</a></video></div><div class="project-copy"><p class="kicker">Independent modding project</p><h3><a href="rocksmith-audio-bridge.html">Rocksmith Audio Bridge</a></h3><p class="project-platforms">Platform: Windows PC · Rocksmith 2014 Remastered</p><p>A Rocksmith mod built on <a href="https://github.com/Lovrom8/RSMods">RSMods</a>, connecting Rocksmith to flexible audio routing, external amp simulation, recording and note-by-note practice.</p><ul class="tag-list"><li>Game modding</li><li>Audio</li><li>Practice tools</li></ul><a class="text-link" href="rocksmith-audio-bridge.html">Demo and features ↗</a></div></article>
-    </section>
+	<main id="main">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<p class="eyebrow">West Yorkshire, UK</p>
+				<h1 id="hero-title">Philip <span class="accent">Igo</span></h1>
+				<p class="hero-role">Unity &amp; C# programmer</p>
+				<p class="hero-intro">I develop gameplay systems, reusable packages and platform integrations. My work includes profiling and optimisation, platform compliance, submission and post-release support.</p>
+				<a class="text-link" href="#work">Selected work <span aria-hidden="true">↓</span></a>
+			</div>
+			<div class="hero-art" >
+				<img src="assets/zombie-army-gameplay.webp" alt="A player aiming at a horde of zombies in Zombie Army VR" decoding="async" fetchpriority="high" width="1920" height="1080">
+				<div class="hero-art-label">Zombie Army VR</div>
+			</div>
+		</section>
 
-    <section id="development" class="section container"><div class="section-title"><span>02.</span><h2>Current projects</h2></div><div class="development-grid"><article class="dev-card"><a href="assets/statsystempro.png"><img src="assets/statsystempro.png" alt="StatSystemPro editor tools" loading="lazy"></a><p class="kicker">Asset Store package · In development</p><h3>StatSystemPro</h3><p>A Unity Asset Store package in development, with a reusable stats framework and editor tools to inspect relationships, modifiers and runtime changes.</p></article><article class="dev-card"><a href="assets/worldgeneratorpro.png"><img src="assets/worldgeneratorpro.png" alt="WorldGeneratorPro project" loading="lazy"></a><p class="kicker">Asset Store package · In development</p><h3>WorldGeneratorPro</h3><p>A Unity Asset Store package in development for procedural 2D world generation, with seeded terrain, roads, districts, buildings and interior layouts.</p></article></div><p class="muted-note">Both packages are in development for the Unity Asset Store. Names and visuals may change.</p></section>
+		<section class="intro-strip" aria-label="Profile summary">
+			<p class="section-kicker">Software engineering experience</p>
+			<p class="strip-statement">8+ years in software engineering, including shipped VR titles at XR Games and subsequent contract work at Rebellion.</p>
+			<div class="strip-meta"><span>Unity · C# · VR</span><span>Open to Unity roles and freelance work</span></div>
+		</section>
 
-    <section id="about" class="section container about"><div class="section-title"><span>03.</span><h2>Experience</h2></div><div class="about-grid"><div><p class="large-copy">I build gameplay systems, editor tools and platform features with a focus on maintainable code, targeted optimisation and stable player experiences.</p><div class="art-strip"><a href="https://www.artstation.com/artwork/wZyQO"><img src="assets/bull.jpg" alt="Selected 3D artwork: bull" loading="lazy"></a><a href="https://www.artstation.com/artwork/ZlLNqm"><img src="assets/speaker.jpg" alt="Selected 3D artwork: speaker" loading="lazy"></a></div></div><ol class="timeline"><li><span>Aug 2025 to present</span><div><strong>Independent</strong><small>Freelance Unity developer</small></div></li><li><span>May to Aug 2025</span><div><strong>Rebellion</strong><small>Contract Unity games programmer</small></div></li><li><span>Mar 2022 to Jan 2025</span><div><strong>XR Games</strong><small>Unity games programmer</small></div></li><li><span>May 2020 to Mar 2022</span><div><strong>Enquirymax</strong><small>Software / full stack developer</small></div></li><li><span>Feb 2018 to May 2020</span><div><strong>Galleos</strong><small>Embedded app developer</small></div></li></ol></div><div class="expertise"><p class="kicker">Platform and performance experience</p><p>Sony, Steam and Oculus SDKs: saves, achievements, leaderboards, lobbies, invites, DLC, activities, entitlements and multiplayer services.</p><p>Profiling loading, memory and CPU bottlenecks while working within VR frame budgets.</p></div></section>
+		<section id="work" class="work-section" aria-labelledby="work-title">
+			<div class="section-heading">
+				<h2 id="work-title">Commercial projects</h2>
+			</div>
 
-    <section id="contact" class="section container contact"><div class="section-title"><span>04.</span><h2>Contact</h2></div><p class="large-copy">I’m available for Unity programming roles and freelance work.</p><a class="contact-email" href="mailto:philip.igo@hotmail.com">philip.igo@hotmail.com <span>↗</span></a><div class="contact-links"><a href="https://github.com/Cheesewizard">GitHub ↗</a><a href="https://www.linkedin.com/in/philip-igo-16b5b1107/">LinkedIn ↗</a><a href="https://www.artstation.com/cheesewizard">ArtStation ↗</a><a href="assets/philip-igo-cv.pdf">CV ↗</a></div></section>
-  </main>
-  <footer class="site-footer container"><span>© 2026 Philip Igo</span><span>West Yorkshire, UK</span><a href="#main">Back to top ↑</a></footer>
-  <script src="script.js"></script>
+			<article class="project project-primary">
+				<div class="project-visual">
+					<figure class="image-frame image-frame-large">
+						<img src="assets/zombie-army-gameplay.webp" alt="Zombie Army VR gameplay with a weapon in the foreground" decoding="async" loading="lazy" width="1920" height="1080">
+						<figcaption>Zombie Army VR gameplay</figcaption>
+					</figure>
+					<div class="number-mark" aria-hidden="true">01</div>
+				</div>
+				<div class="project-copy">
+					<p class="project-type">XR Games / Rebellion</p>
+					<h3>Zombie Army VR</h3>
+					<p class="project-lede">Core gameplay architecture, reusable platform packages and cross-platform delivery.</p>
+					<p>I wrote substantial parts of the core architecture, including game flow, progression, upgrades and mission progress. I authored the core score service for multikills and other scoring modifiers, using extensible, independent modules.</p>
+					<p>I independently authored the save package for <span class="accent">Zombieland: Headshot Fever Reloaded</span>, then expanded it to support Steam and Oculus, with further Sony features. I independently authored a reusable social integration package for those platforms, alongside work on multiplayer features, backend setup, leaderboards and friend invites.</p>
+					<p>I worked on asynchronous scene loading, CPU and memory profiling, and optimisation within VR frame budgets. My work also covered platform compliance, submission, release and post-release support. Additional contributions included hand gestures, adaptive triggers and pause menu animations.</p>
+					<div class="project-footer">
+						<div class="tag-list"><span>Meta Quest</span><span>Oculus Rift</span><span>PC VR (Steam)</span><span>PSVR2 (PS5)</span></div>
+						<a class="text-link" href="zombie-army-vr.html">Read project notes <span aria-hidden="true">↗</span></a>
+					</div>
+				</div>
+			</article>
+
+			<article class="project project-secondary">
+				<div class="project-copy">
+					<p class="project-type">XR Games</p>
+					<h3>Starship Troopers: Continuum</h3>
+					<p class="project-lede">Reusable package integration, multiplayer systems and loading optimisation.</p>
+					<p>I integrated and iterated on my save and social packages for this project. I also worked on multiplayer features, backend setup, leaderboards and friend invites, alongside asynchronous scene loading and performance profiling.</p>
+					<p>I supported platform compliance, submission and release, followed by post-release bug fixes.</p>
+					<div class="project-footer"><div class="tag-list"><span>Meta Quest</span><span>PSVR2 (PS5)</span></div><a class="text-link" href="starship-troopers-continuum.html">Read project notes <span aria-hidden="true">↗</span></a></div>
+				</div>
+				<div class="project-visual">
+					<figure class="image-frame"><img src="assets/starship-troopers.webp" alt="Starship Troopers: Continuum game artwork" decoding="async" loading="lazy" width="1440" height="810"><figcaption>Game artwork · Starship Troopers: Continuum</figcaption></figure>
+					<div class="number-mark" aria-hidden="true">02</div>
+				</div>
+			</article>
+
+			<article class="project project-tertiary">
+				<div class="project-visual">
+					<figure class="image-frame"><img src="assets/zombieland.webp" alt="Zombieland: Headshot Fever Reloaded game artwork" decoding="async" loading="lazy" width="1440" height="810"><figcaption>Game artwork · Zombieland: Headshot Fever Reloaded</figcaption></figure>
+					<div class="number-mark" aria-hidden="true">03</div>
+				</div>
+				<div class="project-copy">
+					<p class="project-type">XR Games</p>
+					<h3>Zombieland: Headshot Fever Reloaded</h3>
+					<p class="project-lede">Gameplay porting, controller integration and ragdoll physics for a PSVR2 launch title.</p>
+					<p>Within the XR Games team, I ported gameplay features and controller integration to PSVR2. I worked on ragdoll physics and resolved physics bugs caused by slow motion.</p>
+					<p>I independently authored the reusable save package and worked on backend setup. I also worked with Sony developer support to resolve platform-specific questions, helping deliver the game as a PSVR2 launch title.</p>
+					<div class="project-footer"><div class="tag-list"><span>PSVR2 (PS5)</span></div><a class="text-link" href="zombieland-reloaded.html">Read project notes <span aria-hidden="true">↗</span></a></div>
+				</div>
+			</article>
+		</section>
+
+<section class="experience-section" aria-labelledby="experience-title"><div class="section-heading"><h2 id="experience-title">Experience</h2></div><dl class="career-list"><div><dt>August 2025 to present</dt><dd>Independent Unity developer</dd></div><div><dt>May to August 2025</dt><dd>Rebellion</dd></div><div><dt>March 2022 to January 2025</dt><dd>XR Games</dd></div><div><dt>2020 to 2022</dt><dd>Enquirymax</dd></div><div><dt>2018 to 2020</dt><dd>Galleos</dd></div></dl></section>
+		<section id="expertise" class="expertise-section" aria-labelledby="expertise-title">
+			<div class="section-heading"><h2 id="expertise-title">Technical experience</h2></div>
+			<div class="expertise-grid">
+				<div class="expertise-panel"><h3>Gameplay architecture</h3><p>Core game flow, progression, upgrades, mission progress and extensible scoring services.</p></div>
+				<div class="expertise-panel"><h3>Platform integration</h3><p>Sony, Steam and Oculus SDKs, including save data, achievements, leaderboards, lobbies, invites and entitlements. Platform compliance, submission and release support.</p></div>
+				<div class="expertise-panel"><h3>Packages &amp; performance</h3><p>Independently authored save and social packages reused across shipped titles. Asynchronous loading, CPU and memory profiling, and optimisation within VR frame budgets.</p></div>
+			</div>
+		</section>
+
+		<section class="bridge-section" aria-labelledby="bridge-title">
+			<div class="bridge-copy"><p class="section-kicker">Independent project · Released</p><h2 id="bridge-title">Rocksmith Audio Bridge</h2><p>A Windows mod built on <a class="inline-link" href="https://github.com/Lovrom8/RSMods">RSMods</a>, supporting flexible audio routing, external amp simulation, recording and pitch shifting, plus note-by-note practice (beta).</p><p class="bridge-detail">The work includes reverse engineering and decompilation to understand game behaviour and integration points. The project has multiple tagged releases.</p><a class="text-link" href="https://github.com/Cheesewizard/RocksmithAudioBridge/releases">View tagged releases <span aria-hidden="true">↗</span></a> <a class="text-link" href="rocksmith-audio-bridge.html">Project details <span aria-hidden="true">↗</span></a></div>
+			<figure class="bridge-media"><video aria-label="Rocksmith Audio Bridge demonstration" controls preload="none" poster="assets/bridge-video-poster.jpg"><source src="assets/bridge-demo.mp4" type="video/mp4"><a href="assets/bridge-demo.mp4">Download the demonstration video</a></video><figcaption>Rocksmith Audio Bridge demonstration: in-game audio routing and practice features. The project features are described in the accompanying text.</figcaption></figure>
+		</section>
+
+		<section class="in-development" aria-labelledby="development-title">
+			<div class="section-heading"><p class="section-kicker">In development · Unity Asset Store packages</p><h2 id="development-title">Current packages</h2><p class="section-note">Both packages are in development and are not yet released. Names may change.</p></div>
+			<div class="dev-grid">
+				<article class="dev-item"><div class="dev-image"><img src="assets/statsystempro.webp" alt="StatSystemPro graph and runtime audit interface" decoding="async" loading="lazy" width="1792" height="1008"></div><div class="dev-copy"><h3>StatSystemPro</h3><p>Runtime stats, modifiers and resources, with dependency graphs and a runtime audit trail.</p></div></article>
+				<article class="dev-item"><div class="dev-image"><img src="assets/worldgeneratorpro.webp" alt="WorldGeneratorPro procedural environment editor" decoding="async" loading="lazy" width="870" height="1000"></div><div class="dev-copy"><h3>WorldGeneratorPro</h3><p>Procedural 2D terrain, roads, districts, buildings and interiors, separating generation data from rendering.</p></div></article>
+			</div>
+		</section>
+
+		<section id="contact" class="contact-section" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p class="section-note">Open to Unity programming roles and freelance work.</p><a class="contact-email" href="mailto:philip.igo@hotmail.com">philip.igo@hotmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/Cheesewizard">GitHub</a><a href="https://www.linkedin.com/in/philip-igo-16b5b1107/">LinkedIn</a><a href="assets/philip-igo-cv.pdf">Download CV (PDF)</a></div></section>
+	</main>
+
+	<footer class="site-footer"><span>Philip Igo · Unity &amp; C# programmer</span><span>West Yorkshire, UK · © 2026</span><span class="imagery-credit">Game imagery belongs to its respective owners.</span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
