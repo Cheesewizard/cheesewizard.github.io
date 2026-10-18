@@ -4,27 +4,15 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 	const frame = demo.querySelector(".lighting-demo-frame");
 	const image = frame.querySelector("img");
 	const canvas = frame.querySelector("canvas");
-	const status = frame.querySelector(".lighting-demo-status");
+	const status = demo.querySelector(".lighting-demo-note");
 	const azimuthInput = demo.querySelector("[data-lighting-azimuth]");
 	const lengthInput = demo.querySelector("[data-lighting-length]");
 	const azimuthOutput = demo.querySelector("[data-lighting-azimuth-output]");
 	const lengthOutput = demo.querySelector("[data-lighting-length-output]");
-	const casterImage = new Image();
-	const interiorImage = new Image();
 	const foregroundImage = new Image();
-	const maskScale = 4;
-	const maskSize = 192;
-	const shadowLengthMultiplier = 2.26;
-	const cropLeft = 650;
-	const cropTop = 80;
-	const worldLeft = 523.522461 - cropLeft;
-	const worldTop = 1274 - 3786.57666 - cropTop;
-	const worldSize = 4345.52246 - 523.522461;
+	const shadowPixelsPerLength = (4345.52246 - 523.522461) / 192 * 2.26;
 	const maskCanvas = document.createElement("canvas");
-	maskCanvas.width = maskSize * maskScale;
-	maskCanvas.height = maskSize * maskScale;
 	const maskContext = maskCanvas.getContext("2d");
-	maskContext.imageSmoothingEnabled = false;
 	let animationFrame = 0;
 	let isReady = false;
 
@@ -45,24 +33,26 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 		if (length <= 0) return;
 
 		const azimuth = Number(azimuthInput.value) * Math.PI / 180;
-		const offsetX = -Math.cos(azimuth) * length * shadowLengthMultiplier * maskScale;
-		const offsetY = Math.sin(azimuth) * length * shadowLengthMultiplier * maskScale;
-		const steps = Math.max(1, Math.min(64, Math.ceil(Math.hypot(offsetX, offsetY))));
-		const scaledMaskSize = maskSize * maskScale;
-		maskContext.globalCompositeOperation = "source-over";
-		maskContext.clearRect(0, 0, scaledMaskSize, scaledMaskSize);
+		const offsetX = -Math.cos(azimuth) * length * shadowPixelsPerLength;
+		const offsetY = Math.sin(azimuth) * length * shadowPixelsPerLength;
+		const steps = Math.max(1, Math.ceil(Math.hypot(offsetX, offsetY)));
+		maskCanvas.width = canvas.width;
+		maskCanvas.height = canvas.height;
 
 		for (let step = 0; step <= steps; step += 1) {
 			const progress = step / steps;
-			maskContext.drawImage(casterImage, offsetX * progress, offsetY * progress, scaledMaskSize, scaledMaskSize);
+			maskContext.drawImage(foregroundImage, offsetX * progress, offsetY * progress, canvas.width, canvas.height);
 		}
+		maskContext.globalCompositeOperation = "source-in";
+		maskContext.fillStyle = "#000";
+		maskContext.fillRect(0, 0, canvas.width, canvas.height);
 
-		maskContext.globalCompositeOperation = "destination-out";
-		maskContext.drawImage(casterImage, 0, 0, scaledMaskSize, scaledMaskSize);
-		maskContext.drawImage(interiorImage, 0, 0, scaledMaskSize, scaledMaskSize);
-		context.imageSmoothingEnabled = false;
+		context.imageSmoothingEnabled = true;
+		context.imageSmoothingQuality = "high";
 		context.globalAlpha = 0.35;
-		context.drawImage(maskCanvas, worldLeft, worldTop, worldSize, worldSize);
+		context.filter = "blur(1.5px)";
+		context.drawImage(maskCanvas, 0, 0);
+		context.filter = "none";
 		context.globalCompositeOperation = "destination-out";
 		context.globalAlpha = 1;
 		context.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
@@ -79,16 +69,6 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 	window.addEventListener("resize", scheduleRender);
 
 	Promise.all([
-		new Promise((resolve, reject) => {
-			casterImage.onload = resolve;
-			casterImage.onerror = reject;
-			casterImage.src = "assets/worldgeneratorpro-lighting-caster-mask.png?v=2a2a422d41";
-		}),
-		new Promise((resolve, reject) => {
-			interiorImage.onload = resolve;
-			interiorImage.onerror = reject;
-			interiorImage.src = "assets/worldgeneratorpro-lighting-interior-mask.png?v=f76f540187";
-		}),
 		new Promise((resolve, reject) => {
 			foregroundImage.onload = resolve;
 			foregroundImage.onerror = reject;
