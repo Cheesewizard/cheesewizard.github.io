@@ -9,6 +9,7 @@ A static, dependency-free site hosted on GitHub Pages from the `main` branch and
 - `index.html`: homepage, career summary and current projects.
 - `zombie-army-vr.html`, `starship-troopers-continuum.html`, `zombieland-reloaded.html`: commercial contributions.
 - `rocksmith-audio-bridge.html`: independent project and video demonstration.
+- `statsystempro.html`: in-development package, editor tooling and standalone sample screenshots.
 - `styles.css`: homepage design and shared colours, typography and responsive layout.
 - `case-studies.css`: project detail layouts.
 - `assets/`: screenshots, video and downloadable CV.

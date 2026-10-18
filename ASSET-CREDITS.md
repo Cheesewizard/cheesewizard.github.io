@@ -14,3 +14,5 @@ The Zombie Army VR gameplay image used in the redesign is an official Steam stor
 Zombie Army VR hand-gesture and scoring screenshots were supplied by Philip Igo to illustrate his contributions. The screenshots depict the wider game; captions identify the relevant systems.
 
 WebP display copies are compressed from the corresponding credited originals. The original supplied screenshots remain available through full-size image links.
+
+StatSystemPro gallery added 18 October 2026: editor graph/audit and BattleBenchmark captures supplied by Philip from `Downloads/StatSystemPro Screenshots`; clean Stat Playground arena and equipment images selected from the 14 October standalone build captures in the project release documentation. These are real application captures, not visual design mockups. Art assets depicted in the sample remain credited to their respective creators. Compressed display and full-size WebP copies preserve the uncropped source compositions.
