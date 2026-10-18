@@ -30,6 +30,14 @@
 				button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 			});
 
+			var thumbnail = items[index];
+			var strip = thumbnail.parentElement;
+			var left = thumbnail.offsetLeft;
+			if (left < strip.scrollLeft) strip.scrollLeft = left;
+			else if (left + thumbnail.offsetWidth > strip.scrollLeft + strip.clientWidth) {
+				strip.scrollLeft = left + thumbnail.offsetWidth - strip.clientWidth;
+			}
+
 			if (shouldFocus) items[index].focus();
 		}
 
