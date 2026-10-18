@@ -2,7 +2,10 @@
 document.querySelectorAll(".ao-comparison").forEach(comparison => {
  const frame = comparison.querySelector(".ao-frame");
  const slider = comparison.querySelector("input");
- const update = () => frame.style.setProperty("--split", `${slider.value}%`);
+ const update = () => {
+  frame.style.setProperty("--split", `${slider.value}%`);
+  slider.setAttribute("aria-valuetext", `${slider.value}% ambient occlusion on`);
+ };
  const move = event => {
   const bounds = frame.getBoundingClientRect();
   slider.value = String(Math.round(Math.max(0, Math.min(100, (event.clientX - bounds.left) / bounds.width * 100))));

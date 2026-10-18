@@ -6,7 +6,7 @@
 .stat-gallery-heading > p { max-width: 30rem; color: var(--muted, #a9aaa5); margin:0; }
 .stat-gallery-viewer { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:1rem; }
 .stat-gallery-stage { margin:0; min-width:0; }
-.stat-gallery-stage img { display:block; width:100%; height:auto; aspect-ratio:16/10; max-height: min(68vh, 44rem); object-fit:contain; background:#101217; border:1px solid rgba(255,255,255,.14); }
+.stat-gallery-stage img { display:block; width:100%; height:auto; aspect-ratio:16/9; max-height: min(68vh, 44rem); object-fit:contain; background:#101217; border:1px solid rgba(255,255,255,.14); }
 .stat-gallery-stage figcaption { margin-top: .8rem; color: var(--muted, #a9aaa5); }
 .stat-gallery-button { border:1px solid rgba(255,255,255,.25); background:#242521; color:#f3f2ec; width:2.75rem; height:2.75rem; border-radius:50%; cursor:pointer; font-size:1.2rem; display:grid; place-items:center; }
 .stat-gallery-button svg { width:1.1rem; height:1.1rem; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }

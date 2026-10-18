@@ -11,7 +11,9 @@
 		var count = gallery.querySelector('[data-gallery-count]');
 		var index = 0;
 
-		function show(nextIndex) {
+		caption.setAttribute('aria-live', 'polite');
+
+		function show(nextIndex, shouldFocus) {
 			index = (nextIndex + items.length) % items.length;
 			var item = items[index];
 			image.src = item.dataset.image;
@@ -24,47 +26,59 @@
 			items.forEach(function (button, buttonIndex) {
 				var isActive = buttonIndex === index;
 				button.classList.toggle('is-active', isActive);
-				button.setAttribute('aria-current', isActive ? 'true' : 'false');
+				button.removeAttribute('aria-current');
+				button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 			});
+
+			if (shouldFocus) items[index].focus();
+		}
+
+		function handleThumbnailKey(event, itemIndex) {
+			var nextIndex = itemIndex;
+
+			if (event.key === 'ArrowLeft') nextIndex = itemIndex - 1;
+			else if (event.key === 'ArrowRight') nextIndex = itemIndex + 1;
+			else if (event.key === 'Home') nextIndex = 0;
+			else if (event.key === 'End') nextIndex = items.length - 1;
+			else return;
+
+			event.preventDefault();
+			show(nextIndex, true);
 		}
 
 		items.forEach(function (item, itemIndex) {
 			item.addEventListener('click', function () {
-				show(itemIndex);
+				show(itemIndex, false);
+			});
+			item.addEventListener('keydown', function (event) {
+				handleThumbnailKey(event, itemIndex);
 			});
 		});
 
 		gallery.querySelector('[data-gallery-previous]').addEventListener('click', function () {
-			show(index - 1);
+			show(index - 1, false);
 		});
-
 		gallery.querySelector('[data-gallery-next]').addEventListener('click', function () {
-			show(index + 1);
+			show(index + 1, false);
 		});
-
 		gallery.addEventListener('keydown', function (event) {
+			if (event.target !== gallery) return;
+
 			if (event.key === 'ArrowLeft') {
 				event.preventDefault();
-				show(index - 1);
-			}
-
-			if (event.key === 'ArrowRight') {
+				show(index - 1, false);
+			} else if (event.key === 'ArrowRight') {
 				event.preventDefault();
-				show(index + 1);
-			}
-
-			if (event.key === 'Home') {
+				show(index + 1, false);
+			} else if (event.key === 'Home') {
 				event.preventDefault();
-				show(0);
-			}
-
-			if (event.key === 'End') {
+				show(0, false);
+			} else if (event.key === 'End') {
 				event.preventDefault();
-				show(items.length - 1);
+				show(items.length - 1, false);
 			}
 		});
 
-		show(0);
+		show(0, false);
 	});
 }());
-
