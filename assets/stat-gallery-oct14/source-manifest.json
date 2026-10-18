@@ -1,0 +1,23 @@
+{
+	"source_root": "C:/Programming/StatSystemPro_Sample_Project/Docs/Release/captures/build-3840x2160",
+	"capture_date": "2026-10-14",
+	"contact_sheet": {
+		"source": "sheet-stills.png",
+		"portfolio_copy": "contact-sheet-stills.png",
+		"sha256": "7627b4d53673921b002a259ea6c633ce589d8862bd526d49a2710abc99b7d14a"
+	},
+	"graphics_settings": {
+		"source": "graphics-settings.json",
+		"sha256": "2b4127391dc0faa8a0e1b33821ce055d7268bb9caaa3bca1343f113fe3483d9f"
+	},
+	"images": [
+		{"source":"01_skybridge_reflection_2x.png","source_size":[3840,2160],"captured":"2026-10-14T12:49:44+01:00","sha256":"37015563dd1d9edd2ce11dbac0cd1d26e3572e1385477237e95cb8ea83131424","output":"skybridge-reflection"},
+		{"source":"03_sprint_pad_2x.png","source_size":[5120,3200],"captured":"2026-10-14T12:49:54+01:00","sha256":"6938e1995278f5978747deeb3bc941d5668c8aa9c04355b0bd45f5a99192a0b1","output":"sprint-pad"},
+		{"source":"04_stacking_shrine_2x.png","source_size":[5120,3200],"captured":"2026-10-14T12:49:59+01:00","sha256":"0322f8b5e34a8cf4cf673369b2130f44d85e3dc721b64b32f040ea8afc98496e","output":"stacking-shrine"},
+		{"source":"08_gun_range_2x.png","source_size":[5120,3200],"captured":"2026-10-14T12:50:18+01:00","sha256":"0b8f6223ae1640078b1ce70a2bd5c9a4168db7b29bada5641eeca82f321be44a","output":"gun-range"},
+		{"source":"11_save_station_loadout_2x.png","source_size":[5120,3200],"captured":"2026-10-14T12:50:33+01:00","sha256":"aa10be76ba671d4d5bdef0669083e0cadbce1d82e1440e76b7732667dbb333c9","output":"save-station-loadout"},
+		{"source":"12_companion_orb_2x.png","source_size":[5120,3200],"captured":"2026-10-14T12:50:38+01:00","sha256":"99c4108e077e2992fb83a626af460d82aa4a433fe5d465a3a1c40b40a2106ef3","output":"companion-orb"},
+		{"source":"13_recruit_2x.png","source_size":[5120,3200],"captured":"2026-10-14T12:50:42+01:00","sha256":"9ca1dc03a30da8c94e0f03b1398cc0ab1bf1b3b7005ddee40b9424f4a1c18e30","output":"recruit"},
+		{"source":"16_regen_fountain_2x.png","source_size":[5120,3200],"captured":"2026-10-14T12:50:57+01:00","sha256":"a36b8ffb6611eb6c204d4ea4767d38dede46e6d96736b466752d449e795c29ff","output":"regen-fountain"}
+	]
+}

@@ -11,11 +11,18 @@ document.querySelectorAll(".ao-comparison").forEach(comparison => {
  slider.addEventListener("input", update);
  frame.addEventListener("pointerdown", event => {
   if (event.button !== 0) return;
+  event.preventDefault();
   frame.setPointerCapture(event.pointerId);
   move(event);
  });
  frame.addEventListener("pointermove", event => {
   if (frame.hasPointerCapture(event.pointerId)) move(event);
  });
+ frame.addEventListener("pointerup", event => {
+  if (!frame.hasPointerCapture(event.pointerId)) return;
+  move(event);
+  frame.releasePointerCapture(event.pointerId);
+ });
+ frame.addEventListener("dragstart", event => event.preventDefault());
  update();
 });
