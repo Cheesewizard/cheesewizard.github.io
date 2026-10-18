@@ -11,6 +11,7 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 	const lengthOutput = demo.querySelector("[data-lighting-length-output]");
 	const casterImage = new Image();
 	const interiorImage = new Image();
+	const foregroundImage = new Image();
 	const maskScale = 4;
 	const maskSize = 192;
 	const shadowLengthMultiplier = 2.26;
@@ -62,6 +63,10 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 		context.imageSmoothingEnabled = false;
 		context.globalAlpha = 0.35;
 		context.drawImage(maskCanvas, worldLeft, worldTop, worldSize, worldSize);
+		context.globalCompositeOperation = "destination-out";
+		context.globalAlpha = 1;
+		context.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
+		context.globalCompositeOperation = "source-over";
 	};
 
 	const scheduleRender = () => {
@@ -77,12 +82,17 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 		new Promise((resolve, reject) => {
 			casterImage.onload = resolve;
 			casterImage.onerror = reject;
-			casterImage.src = "assets/worldgeneratorpro-lighting-caster-mask.png";
+			casterImage.src = "assets/worldgeneratorpro-lighting-caster-mask.png?v=2a2a422d41";
 		}),
 		new Promise((resolve, reject) => {
 			interiorImage.onload = resolve;
 			interiorImage.onerror = reject;
-			interiorImage.src = "assets/worldgeneratorpro-lighting-interior-mask.png";
+			interiorImage.src = "assets/worldgeneratorpro-lighting-interior-mask.png?v=f76f540187";
+		}),
+		new Promise((resolve, reject) => {
+			foregroundImage.onload = resolve;
+			foregroundImage.onerror = reject;
+			foregroundImage.src = "assets/worldgeneratorpro-lighting-foreground-mask.png?v=63188e4b22";
 		}),
 		image.decode()
 	]).then(() => {
