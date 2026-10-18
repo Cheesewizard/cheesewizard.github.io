@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "file": "zombie-army-steam-street-horde",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_152dad1d11b8d32912056eb63f161269a7108525.1920x1080.jpg?t=1772185332",
+    "caption": "A horde advances through a fire-lit street.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 1,
+    "file": "zombie-army-steam-interior-combat",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_9b3e46d5237b23364b5082ae2ca858d123056b46.1920x1080.jpg?t=1772185332",
+    "caption": "Close-range combat in a red-lit interior.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 7,
+    "file": "zombie-army-steam-green-lit-ruins",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_17a36dfa6f7c0f9df6a5b116ec22c9730f5af88c.1920x1080.jpg?t=1772185332",
+    "caption": "Undead soldiers advance through green-lit ruins.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 12,
+    "file": "zombie-army-steam-doorway-defence",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_818b0915b238145c839e83be8b75c52e49cd2c95.1920x1080.jpg?t=1772185332",
+    "caption": "Dual pistols cover a doorway as a horde approaches.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 11,
+    "file": "zombie-army-steam-indoor-encounter",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_364ed8fc970c5a4d40e9f0e40497df6e0cc362a2.1920x1080.jpg?t=1772185332",
+    "caption": "An indoor encounter with zombies closing in from adjoining rooms.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 9,
+    "file": "zombie-army-steam-ruined-street",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_b0283c030c94bc85718fab0ad46b87ac270261ae.1920x1080.jpg?t=1772185332",
+    "caption": "Pistol combat among ruined buildings and burning debris.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 3,
+    "file": "zombie-army-steam-night-combat",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_9043bd5decf9898d01e328ffd8a8e8cdf7db73c6.1920x1080.jpg?t=1772185332",
+    "caption": "Automatic weapon fire lights up a night-time encounter.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 6,
+    "file": "zombie-army-steam-snowy-horde",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_b512177ad9b4bfc5eb0c6395e42cb124963e3344.1920x1080.jpg?t=1772185332",
+    "caption": "A horde approaches through a snowy settlement.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 8,
+    "file": "zombie-army-steam-snowy-street",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_d077e651fa0fa0abda89dd3598918a8494bcf541.1920x1080.jpg?t=1772185332",
+    "caption": "Close-range combat on a snow-covered street.",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": 10,
+    "file": "zombie-army-steam-armoured-enemies",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2058030/ss_6c51b6d58fac18ae80889912439c60b0cd3e81e3.1920x1080.jpg?t=1772185332",
+    "caption": "Armoured enemies advance in a snowy industrial area.",
+    "width": 1920,
+    "height": 1080
+  }
+]
