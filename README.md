@@ -2,7 +2,7 @@
 
 Live website: https://cheesewizard.github.io/
 
-A static, dependency-free site hosted on GitHub Pages from the `main` branch and repository root. There is no build step, analytics service, contact-form service, or paid hosting requirement.
+A static, dependency-free site hosted on GitHub Pages from the `main` branch and repository root. There is no build step, contact-form service, or paid hosting requirement. GoatCounter provides visitor analytics and tracks CV, email and GitHub link clicks.
 
 ## Update content
 
