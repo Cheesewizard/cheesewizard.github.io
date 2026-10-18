@@ -17,6 +17,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=DM+Sans:wght@400&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css?v=0fad452fee">
 	<link rel="stylesheet" href="case-studies.css?v=3abab51452">
+	<link rel="stylesheet" href="commercial-gallery.css?v=1">
+	<script src="commercial-gallery.js?v=1" defer></script>
 	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 	<meta name="theme-color" content="#20211f">
 	<meta name="twitter:card" content="summary_large_image">
@@ -27,6 +29,20 @@
 	<main id="main" class="case-wrap">
 		<section class="case-hero" aria-labelledby="case-title"><p class="case-kicker">Shipped commercial project · XR Games</p><h1 id="case-title">Zombieland: Headshot Fever <span class="accent">Reloaded</span></h1><p class="case-intro">Gameplay features, controller integration, physics and platform delivery for a PSVR2 launch title.</p><div class="case-meta"><span>Platform</span><strong>PSVR2 (PS5)</strong><span>Role</span><strong>Unity games programmer</strong><span>Project</span><strong><a href="https://store.playstation.com/en-gb/concept/10005906">View on PlayStation Store <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M7 7h10v10"/></svg></a></strong></div></section>
 		<figure class="case-media"><img src="assets/zombieland.webp" alt="Zombieland: Headshot Fever Reloaded game artwork" width="1440" height="810" decoding="async"><figcaption>Zombieland: Headshot Fever Reloaded · XR Games</figcaption></figure>
+		<section class="commercial-gallery" data-commercial-gallery tabindex="0" aria-labelledby="game-gallery-title">
+			<div class="commercial-gallery-heading"><div><p class="case-kicker">Shipped game</p><h2 id="game-gallery-title">Official game <span class="accent">screenshots</span></h2></div><p>Screenshots from the <a href="https://store.playstation.com/en-gb/concept/10005906">official PlayStation Store listing</a>.</p></div>
+			<div class="commercial-gallery-viewer">
+				<button class="commercial-gallery-button" type="button" data-gallery-previous aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></button>
+				<figure class="commercial-gallery-stage"><a href="assets/commercial-gallery/zombieland-garage-full.webp" data-gallery-link aria-label="View full-size image: Zombieland garage combat"><img src="assets/commercial-gallery/zombieland-garage.webp" alt="Zombieland: Headshot Fever Reloaded garage combat with zombies approaching" width="1280" height="720" loading="lazy" decoding="async" data-gallery-image></a><figcaption data-gallery-caption aria-live="polite">Close-range combat in a garage.</figcaption></figure>
+				<button class="commercial-gallery-button" type="button" data-gallery-next aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></button>
+			</div>
+			<div class="commercial-gallery-status"><span data-gallery-count>1 / 3</span><span>Use the arrow keys to browse · Open the main image for full size</span></div>
+			<div class="commercial-gallery-thumbs" aria-label="Choose a screenshot">
+				<button type="button" class="is-active" aria-label="Show garage screenshot" aria-current="true" data-gallery-item data-image="assets/commercial-gallery/zombieland-garage.webp" data-full="assets/commercial-gallery/zombieland-garage-full.webp" data-alt="Zombieland: Headshot Fever Reloaded garage combat with zombies approaching" data-caption="Close-range combat in a garage."><img src="assets/commercial-gallery/zombieland-garage.webp" alt="Zombieland garage combat thumbnail" width="1280" height="720" decoding="async"></button>
+				<button type="button" aria-label="Show rooftop screenshot" aria-current="false" data-gallery-item data-image="assets/commercial-gallery/zombieland-rooftop.webp" data-full="assets/commercial-gallery/zombieland-rooftop-full.webp" data-alt="Zombieland: Headshot Fever Reloaded rooftop combat in daylight" data-caption="A bright rooftop encounter with the city skyline behind it."><img src="assets/commercial-gallery/zombieland-rooftop.webp" alt="Zombieland rooftop combat thumbnail" width="1280" height="720" decoding="async"></button>
+				<button type="button" aria-label="Show night screenshot" aria-current="false" data-gallery-item data-image="assets/commercial-gallery/zombieland-night.webp" data-full="assets/commercial-gallery/zombieland-night-full.webp" data-alt="Zombieland: Headshot Fever Reloaded night combat beneath a lightning strike" data-caption="Night combat beneath a lightning-lit sky."><img src="assets/commercial-gallery/zombieland-night.webp" alt="Zombieland night combat thumbnail" width="1280" height="720" decoding="async"></button>
+			</div>
+		</section>
 		<section class="case-section"><p class="case-kicker">Gameplay and PSVR2 porting</p><div><h2>Built for <span class="accent">PSVR2</span></h2><p>Within the XR Games team, I ported gameplay features and controller integration to PSVR2. I worked on ragdoll physics and resolved physics bugs caused by slow motion.</p><p>I worked with Sony developer support to resolve platform-specific questions, helping deliver the game as a PSVR2 launch title.</p></div></section>
 		<section class="case-section"><p class="case-kicker">Reusable save package</p><div><h2>Portable <span class="accent">progression</span></h2><p>I independently authored the reusable save package for the project. That package later formed the basis for extending save support across Steam, Oculus and Sony on Zombie Army VR.</p></div></section>
 		<section class="case-section"><p class="case-kicker">Connected systems</p><div><h2>Leaderboards and <span class="accent">backend</span></h2><p>I handled all leaderboard integration for Zombieland: Headshot Fever Reloaded and also worked on backend setup.</p></div></section>
