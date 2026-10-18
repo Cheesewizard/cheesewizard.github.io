@@ -10,6 +10,7 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 	const azimuthOutput = demo.querySelector("[data-lighting-azimuth-output]");
 	const lengthOutput = demo.querySelector("[data-lighting-length-output]");
 	const foregroundImage = new Image();
+	const buildingFootprint = { left: 252, top: 189, width: 715, height: 632 };
 	const shadowPixelsPerLength = (4345.52246 - 523.522461) / 192 * 2.26;
 	const maskCanvas = document.createElement("canvas");
 	const maskContext = maskCanvas.getContext("2d");
@@ -38,14 +39,17 @@ document.querySelectorAll(".lighting-demo").forEach(demo => {
 		const steps = Math.max(1, Math.ceil(Math.hypot(offsetX, offsetY)));
 		maskCanvas.width = canvas.width;
 		maskCanvas.height = canvas.height;
+		maskContext.fillStyle = "#000";
 
 		for (let step = 0; step <= steps; step += 1) {
 			const progress = step / steps;
-			maskContext.drawImage(foregroundImage, offsetX * progress, offsetY * progress, canvas.width, canvas.height);
+			maskContext.fillRect(
+				buildingFootprint.left + offsetX * progress,
+				buildingFootprint.top + offsetY * progress,
+				buildingFootprint.width,
+				buildingFootprint.height
+			);
 		}
-		maskContext.globalCompositeOperation = "source-in";
-		maskContext.fillStyle = "#000";
-		maskContext.fillRect(0, 0, canvas.width, canvas.height);
 
 		context.imageSmoothingEnabled = true;
 		context.imageSmoothingQuality = "high";
