@@ -1,0 +1,23 @@
+[
+  {
+    "file": "zombieland-workshop-firefight",
+    "source": "https://image.api.playstation.com/vulcan/ap/rnd/202302/1012/47d5627cb01256e95d2cfaa101847d7ea66eae88a4633f82.jpg",
+    "width": 3840,
+    "height": 2160,
+    "caption": "A pistol firefight beside a car inside the workshop."
+  },
+  {
+    "file": "zombieland-workshop-shotgun",
+    "source": "https://image.api.playstation.com/vulcan/ap/rnd/202302/1012/63b5cfc108d1416f8d2faff13dfc31f4269f8da57bda8fc7.jpg",
+    "width": 3840,
+    "height": 2160,
+    "caption": "Shotgun combat across the workshop interior."
+  },
+  {
+    "file": "zombieland-outdoor-explosion",
+    "source": "https://image.api.playstation.com/vulcan/ap/rnd/202302/1012/c695cbfd90d75f6d9de20b04fafc77886a16d46a13b31799.jpg",
+    "width": 3840,
+    "height": 2160,
+    "caption": "An explosion erupts beside zombies and parked cars outdoors."
+  }
+]
