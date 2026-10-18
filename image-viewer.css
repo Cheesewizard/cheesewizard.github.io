@@ -2,7 +2,6 @@ html {
 	scrollbar-gutter: stable;
 }
 
-.gallery-expand,
 .image-viewer-close {
 	border: 1px solid #b28133;
 	background: #20211f;
@@ -12,8 +11,6 @@ html {
 	cursor: pointer;
 }
 
-.gallery-expand:hover,
-.gallery-expand:focus-visible,
 .image-viewer-close:hover,
 .image-viewer-close:focus-visible {
 	outline: 2px solid #e8a62e;

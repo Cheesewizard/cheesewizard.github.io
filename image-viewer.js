@@ -79,18 +79,4 @@
 		});
 	});
 
-	document.querySelectorAll('[data-stat-gallery], [data-commercial-gallery]').forEach(function (gallery) {
-		var link = gallery.querySelector('[data-gallery-link]');
-		var controls = gallery.querySelector('.stat-gallery-controls, .commercial-gallery-status');
-		if (!link || !controls) return;
-
-		var button = document.createElement('button');
-		button.type = 'button';
-		button.className = 'gallery-expand';
-		button.textContent = 'Expand image';
-		button.addEventListener('click', function () {
-			expand(link, button);
-		});
-		controls.append(button);
-	});
 }());
